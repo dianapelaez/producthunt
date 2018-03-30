@@ -1,11 +1,10 @@
-class CreateProducts < ActiveREcord::Migration
+class CreateProducts < ActiveRecord::Migration[5.1]
 	def change
-		create table : products do |t|
+		create_table :products do |t|
 			t.string :name
 			t.string :url
 			t.text    :description
 			t.timestamps null:false
 		end
 	end
-
 end
